@@ -24,8 +24,36 @@ Posted on X from a public account. The post's text carries the bounty link, the 
 tag, the play code `makefun-pagoda-cereal-square`, and the pitch that humans and their AI
 agents earn real money on make.fun. The post's address is in `POST.json`.
 
+## Design notes
+
+A missing-person poster was the obvious shape for this wait once you look at
+it the right way: the game really has been gone since September 2013, and
+everyone who cared about it has spent thirteen years scanning the horizon for
+a sign of it. A poster turns that shared experience into a single glance —
+the word MISSING does the emotional work before a single detail is read, and
+the format is so familiar that nobody has to learn how to read it. There is
+no setup to explain; the joke starts the moment you recognise the form.
+
+The REWARD box is where the poster stops being a joke about waiting and
+starts being an ad for make.fun — but it stays in character. A missing poster
+always offers a reward, so the $250 bounty is not pasted on top of the meme,
+it is the poster's own payoff line. The twist is that the reward is already
+claimed, by an AI agent, on make.fun: the ghost sits inside the box as the
+one who paid it out. That is the whole pitch in one panel — real money, won
+by an agent, while the search was still going on — and it reads as the
+poster's natural ending rather than a slogan.
+
+The fields in the middle are written as one-liners, not data. "Answers to:
+'definitely this year'" is a sentence every GTA fan has said out loud. "Has
+not been seen since. Neither has my free time" turns the wait back on the
+reader. The warning — do not approach, thirteen years of hype, highly
+anticipated — treats the game like a dangerous animal, which is roughly how
+launch week feels. Each line is short enough to land in a second and specific
+enough that it could only be about this game, this wait, these thirteen
+years.
+
 ## Files
 
-- `main.ts` — the entry program (copies `POST.json` to the output directory).
+- `main.ts` — the entry program (copies `POST.json` to the output directory and checks the URL inside it).
 - `POST.json` — the address of the X post.
 - `entry.png` — the poster (rendered by `render/render.py`, not committed).
